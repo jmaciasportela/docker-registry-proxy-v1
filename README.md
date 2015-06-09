@@ -1,18 +1,19 @@
-# Docker Registry 2.0 Proxy
+# Docker Registry 1.0 Proxy
 
-Use this image to run Docker Registry 2.0 behind nginx proxy, with SSL and basic_auth enabled.
+Use this image to run Docker Registry 1.0 behind nginx proxy, with SSL and basic_auth enabled.
 
+Original content from container-solutions 
 [Tutorial](http://www.container-solutions.com/2015/04/running-secured-docker-registry-2-0/)
 
 ## Settings
 
-First run official Docker Registry 2.0 container:
+First run official Docker Registry 1.0 container:
 
 ```
 #!/bin/bash
 docker run --name docker-registry \
 	-v $(pwd)/data:/tmp/registry-dev \
-	registry:2.0
+	registry:0.9.1
 ```
 
 Then run the proxy:
